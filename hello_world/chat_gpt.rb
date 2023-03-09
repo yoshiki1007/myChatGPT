@@ -1,11 +1,12 @@
 require 'json'
 require "openai"
+require "pry"
 
 class ChatGpt
   class << self
     def get_text(event)
       event_body_json = JSON.parse(event["body"])
-      req_text = event_body_json["events"][0]["message"]["text"]
+      req_text = event_body_json.dig("events", 0, "message", "text")
 
       client = OpenAI::Client.new(access_token: ENV['CHAT_GPT_API_KEY'])
 
@@ -16,7 +17,7 @@ class ChatGpt
           temperature: 0.7,
         })
 
-      response.dig("choices", 0, "message", "content")
+      response.dig("choices", 0, "message", "content").gsub(/[\r\n]/,"") # 改行を削除
     end
   end
 end
