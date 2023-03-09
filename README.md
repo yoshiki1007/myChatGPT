@@ -1,5 +1,8 @@
 # my-chat-gpt
 
+<img width="416" alt="スクリーンショット 2023-03-09 23 11 11" src="https://user-images.githubusercontent.com/56143537/224050815-0b0ec6e0-85ad-4c94-a727-2543bc5645f5.png">
+
+
 ## 利用サービス
 
 - OpenAi API / model gpt-3.5-turbo
