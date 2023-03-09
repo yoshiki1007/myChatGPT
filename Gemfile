@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "ruby-openai"
+gem "httparty"
 
 group :test do
   gem "test-unit"
