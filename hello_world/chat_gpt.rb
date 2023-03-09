@@ -14,7 +14,7 @@ class ChatGpt
           temperature: 0.7,
         })
 
-      puts response.dig("choices", 0, "message", "content")
+      response.dig("choices", 0, "message", "content")
     end
   end
 end
