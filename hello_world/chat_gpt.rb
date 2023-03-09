@@ -1,16 +1,16 @@
 require 'json'
 require "openai"
-require "pry"
 
 class ChatGpt
   class << self
     def get_text(event)
-      client = OpenAI::Client.new(access_token: "access_token_goes_here")
+      message = event[:body]
+      client = OpenAI::Client.new(access_token: ENV['CHAT_GPT_API_KEY'])
 
       response = client.chat(
         parameters: {
-          model: "gpt-3.5-turbo", # Required.
-          messages: [{ role: "user", content: "Hello!"}], # Required.
+          model: "gpt-3.5-turbo",
+          messages: [{ role: "user", content: "こんにちは"}],
           temperature: 0.7,
         })
 
