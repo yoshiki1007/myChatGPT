@@ -19,7 +19,7 @@ Resources:
       Handler: app.lambda_handler
       Runtime: ruby2.7
       Architectures:
-        - x86_64
+        - arm64
       FunctionUrlConfig:
         AuthType: NONE
 
