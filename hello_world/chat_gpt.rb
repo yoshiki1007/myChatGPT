@@ -1,6 +1,5 @@
 require 'json'
 require "openai"
-require "pry"
 
 class ChatGpt
   class << self
