@@ -1,7 +1,6 @@
 # my-chat-gpt
 
-<img width="416" alt="スクリーンショット 2023-03-09 23 11 11" src="https://user-images.githubusercontent.com/56143537/224050815-0b0ec6e0-85ad-4c94-a727-2543bc5645f5.png">
-
+https://user-images.githubusercontent.com/56143537/224471813-d1d23a46-b2aa-4ead-88b1-d5e01e9b2fc3.mp4
 
 ## 利用サービス
 
